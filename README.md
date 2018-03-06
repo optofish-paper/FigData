@@ -12,5 +12,5 @@ Folders contain the following files:
   * Anatomy stacks: `Anatomy-16bit-scaled.tif.zip`, made of raw imaging stacks averaged over 20 time points, saved as 16-bit grayscale TIFF file (size: 47 MB).
   * Maximum intensity projection stacks: `MIP_...tif`, for low-dimensional representation of the files above.
 
-## Downloading instructions
+## Download instructions
 Files are stored using [Git LFS](https://git-lfs.github.com/) system because of size. The simplest way to download them is to click on each file and proceed through `Download` button, or `View raw` link ([example](https://github.com/optofish-paper/FigData/blob/master/Fig2D/nuc/MIP_CompositeRGB-w_max0p46.tif)). For automatic download of all files in the repository, install [Git LFS](https://git-lfs.github.com/) and clone the repo.
