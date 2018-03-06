@@ -17,5 +17,5 @@ Folders contain the following files:
 
 **(C-H)** effect of regions ablation on the `dF/F` signal across the fish brains. The `dF/F` change was computed relative to pre-ablation conditions (magenta for elevation, green for decrease). Before averaging, individual fish brains were registered to a reference [Z-brain](http://engertlab.fas.harvard.edu/Z-Brain/#/home) atlas, colored in gray.
 
-## Download instructions
+## File downloading
 Files are stored using [Git LFS](https://git-lfs.github.com/) system because of size. The simplest way to download them is to click on each file and proceed through `Download` button, or `View raw` link ([example](https://github.com/optofish-paper/FigData/blob/master/Fig2D/nuc/MIP_CompositeRGB-w_max0p46.tif)). For automatic download of all files in the repository, install [Git LFS](https://git-lfs.github.com/) and clone the repo.
