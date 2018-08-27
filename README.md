@@ -1,6 +1,6 @@
 # Processed light-sheet used in Figures
 
-## Figure 2A
+## FunctionalMaps (Figure 1c)
 Functional maps of zebrafish brains: 
 
 `/nuc`, nuclear-expressing GCaMP6f fish (manuscript Fig.2A)
@@ -12,10 +12,10 @@ Folders contain the following files:
   * Anatomy stacks: `Anatomy-16bit-scaled.tif.zip`, made of raw imaging stacks averaged over 20 time points, saved as 16-bit grayscale TIFF stack (size: 47 MB).
   * Maximum intensity projection stacks: `MIP_...tif`, for low-dimensional representation of the files above.
 
-## Figure 3
-**(A)**, exemplary functional map of an individual fish, in RGB TIFF stack. Color code: red for swimming activity, green for forward stimulus motion, blue for backward stimulus motion.
+## Ablation Effects in dF/F (Figure 2)
+**(a)**, exemplary functional map of an individual fish, in RGB TIFF stack. Color code: red for swimming activity, green for forward stimulus motion, blue for backward stimulus motion.
 
-**(C-H)** effect of regions ablation on the `dF/F` signal across the fish brains. The `dF/F` change was computed relative to pre-ablation conditions (magenta for elevation, green for decrease). Before averaging, individual fish brains were registered to a reference [Z-brain](http://engertlab.fas.harvard.edu/Z-Brain/#/home) atlas, colored in gray.
+**(c-h)** effect of regions ablation on the `dF/F` signal across the fish brains. The `dF/F` change was computed relative to pre-ablation conditions (magenta for elevation, green for decrease). Before averaging, individual fish brains were registered to a reference [Z-brain](http://engertlab.fas.harvard.edu/Z-Brain/#/home) atlas, colored in gray.
 
 ## File downloading
 Files are stored using [Git LFS](https://git-lfs.github.com/) system because of size. The simplest way to download them is to click on each file and proceed through `Download` button, or `View raw` link ([example](https://github.com/optofish-paper/FigData/blob/master/Fig2D/nuc/MIP_CompositeRGB-w_max0p46.tif)). For automatic download of all files in the repository, install [Git LFS](https://git-lfs.github.com/) and clone the repo.
