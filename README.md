@@ -1,4 +1,4 @@
-# Processed light-sheet used in Figures
+# Processed light-sheet data (zebrafish brains)
 
 ## FunctionalMaps (Figure 1c)
 Functional maps of zebrafish brains: 
