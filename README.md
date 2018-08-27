@@ -3,9 +3,9 @@
 ## FunctionalMaps (Figure 1c)
 Functional maps of zebrafish brains: 
 
-`/nuc`, nuclear-expressing GCaMP6f fish (manuscript Fig.2A)
+`/nuc`, nuclear-expressing GCaMP6f fish (manuscript Fig.1c)
 
-`/cyto`, cytosol-expressing GCaMP6f fish (not shown in manuscript)
+`/cyto`, cytosol-expressing GCaMP6f fish (manuscript SI Video 2)
 
 Folders contain the following files:
   * Functional maps in RGB representation: `CompositeRGB-gamma0.5-w_range(0-1)-16bit-scaled.tif.zip`. The regression-computed weights `w_i (i=1,2,3)` (swimming, forward stimulus, backward stimulus) were linearly scaled into 16-bit image intensities (0,1) -> (0, 65535) and combined in a 3-channel 16-bit RGB TIFF stack (size: 251 MB).
