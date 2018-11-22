@@ -1,30 +1,51 @@
-# Processed light-sheet data of zebrafish brain activity
+# Zebrafish brain activity
+This repository provides full-resolution TIFF files of zebrafish brain activity maps from the paper:
 
-## FunctionalMaps (Figure 1c)
-Functional maps of zebrafish brains during optomotor response behavior: 
+*Brain-wide circuit interrogation at the cellular level guided by online analysis of neuronal function.* [Vladimirov et al, Nat. Methods, 2018]().
 
-`/nuc`, nuclear-expressing GCaMP6f fish (paper Fig.1c, SI Video 1)
+The images were acquired using a custom light-sheet microscope (Zebrascope) and post-processed as described in the paper.
 
-`/cyto`, cytosol-expressing GCaMP6f fish (paper SI Video 2)
+## Functional Maps
+Functional maps of zebrafish brains during optomotor response behavior, prior to any ablations: 
 
-Folders contain the following files:
-  * Functional maps in RGB representation: `CompositeRGB-gamma0.5-w_range(0-1)-16bit-scaled.tif.zip`. The regression-computed weights `w_i (i=1,2,3)` (swimming, forward stimulus, backward stimulus) were linearly scaled into 16-bit image intensities (0,1) -> (0, 65535) and combined in a 3-channel 16-bit RGB TIFF stack (size: 251 MB).
-  * Anatomy stacks: `Anatomy-16bit-scaled.tif.zip`, made of raw imaging stacks averaged over 20 time points, saved as 16-bit grayscale TIFF stack (size: 47 MB).
-  * Maximum intensity projection stacks: `MIP_...tif`, for low-dimensional representation of the files above.
+Fish expressing GCaMP6f in neuronal **nuclei** (paper, Fig.1c, SI Video 1).
+Folder `/nuc` contains the following files:
+  * [Functional map in RGB color code](/nuc/CompositeRGB-gamma0.5-w_range(0-1)-16bit-scaled.tif.zip). The regression-computed weights `w_i (i=1,2,3)` (swimming, forward stimulus, backward stimulus) were linearly scaled into 16-bit image intensities (0,1) -> (0, 65535) and combined into a 3-channel RGB TIFF stack (red, green, blue channel, respectively) (file size: 251 MB).
+  * [Maximum intensity projection stack](/nuc/MIP_CompositeRGB-w_max0p46.tif) for quick overview of the functional activity (6 MB).
+  * [Anatomy stack](/nuc/Anatomy-16bit-scaled.tif.zip), an average of 10 imaging stacks from the experiment (raw fluorescence, no post-processing), a 16-bit grayscale TIFF file (47 MB).
 
-## Ablation Effects in dF/F (Figure 2)
-**(a)**, exemplary functional map of an individual fish, in RGB TIFF stack. Color code: red for swimming activity, green for forward stimulus motion, blue for backward stimulus motion.
 
-**(c-h)** effect of regions ablation on the `dF/F` signal across the fish brains. The `dF/F` change was computed relative to pre-ablation conditions (magenta for elevation, green for decrease). Before averaging, individual fish brains were registered to a reference [Z-brain](http://engertlab.fas.harvard.edu/Z-Brain/#/home) atlas, colored in gray.
+Fish expressing GCaMP6f in neuronal **cytosol** (paper, Fig.2a, SI Video 2).
+Folder `/cyto` contains the following files:
+  * [Functional map in RGB color code](/cyto/CompositeRGB-gamma0.5-w_range(0-1)-16bit-scaled.tif.zip).
+  * [Maximum intensity projection stack](/cyto/MIP-CompositeRGB-gamma0.5-w_max0.46.tif)
+  * [Anatomy stack](/cyto/Anatomy-16bit-scaled.tif.zip)
+ 
+## Ablation effects on brain activity 
+Effect of brain region ablation on the relative fluorescence signal change `dF/F` across the brain (paper, Fig.2c-h). The `dF/F` change was computed relative to pre-ablation conditions. Before averaging across individuals, each fish brain was registered to a reference [Z-brain](http://engertlab.fas.harvard.edu/Z-Brain/#/home) atlas.
+
+  * [ablation fc-RoL (reticulospinal region)](/ablationEffects_dFF/C-ablation_RoL-dFFchange(magenta-green)-Zbrain(gray).tif.zip) 
+  * [fc-nMLF (another reticulospinal region)](/ablationEffects_dFF/D-ablation_nMLF-dFFchange(magenta-green)-Zbrain(gray).tif.zip)
+  * [fc-preT ("pretectum")](/ablationEffects_dFF/E-ablation_PreT-dFFchange(magenta-green)-Zbrain(gray).tif.zip)
+  * [fc-IO ("inferior olive")](/ablationEffects_dFF/F-ablation_IO-dFFchange(magenta-green)-Zbrain(gray).tif.zip)
+  * [fc-DHB ("dorsal hindbrain")](/ablationEffects_dFF/G-ablation_DHB-dFFchange(magenta-green)-Zbrain(gray).tif.zip)
+  * [fc-RandOT ("random optic tectum")](/ablationEffects_dFF/H-ablation_randOT-dFFchange(magenta-green)-Zbrain(gray).tif.zip)
+(each file 26 MB)
+
+## Screenshots 
+### Maximum intensity projection of nuclear-expressing GCaMP6f fish:
+![nuclear-expressing GCaMP6f fish (paper Fig.1c, SI Video 1)](/functionalMaps/nuc/MIP_CompositeRGB-w_max0p46-scale0.5.png "nuclear-expressing GCaMP6f")
+
+### Maximum intensity projection of cytosol-expressing GCaMP6f fish:
+![cytosol-expressing GCaMP6f fish (paper SI Video 2)](/functionalMaps/cyto/MIP-CompositeRGB-gamma0.5-w_max0.46-scale0.5.png "cytosol-expressing GCaMP6f")
+
+### Maximum intensity projections of ablation effects:
+![Ablation Effects in dF/F (Figure 2)](/ablationEffects_dFF/combined-dFFeffect-allAreas.png "ablation effects")
 
 ## File downloading
-Files are stored using [Git LFS](https://git-lfs.github.com/) system because of size. The simplest way to download them is to click on each file and proceed through `Download` button, or `View raw` link ([example](https://github.com/optofish-paper/FigData/blob/master/Fig2D/nuc/MIP_CompositeRGB-w_max0p46.tif)). For automatic download of all files in the repository, install [Git LFS](https://git-lfs.github.com/) and clone the repo.
+Files are versioned using [Git LFS](https://git-lfs.github.com/) system because of the size. The simplest way to download them is to click on each file and proceed through `Download` button, or clicking `View raw`. For automatic download of all files in the repository, install [Git LFS](https://git-lfs.github.com/) and clone the whole repo.
 
-## Screenshots (maximum intensity projections)
-![nuclear-expressing GCaMP6f fish (paper Fig.1c, SI Video 1)](/functionalMaps/nuc/MIP_CompositeRGB-w_max0p46-scale0.5.tif)
+## Citation
+If you use the data, please cite the original paper:
 
-![cytosol-expressing GCaMP6f fish (paper SI Video 2)](/functionalMaps/cyto/MIP-CompositeRGB-gamma0.5-w_max0.46-scale0.5.tif)
-
-![]()
-
-![]()
+*Brain-wide circuit interrogation at the cellular level guided by online analysis of neuronal function.* [Vladimirov et al, Nat. Methods, 2018]().
