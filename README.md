@@ -1,11 +1,11 @@
-# Processed light-sheet data (zebrafish brains)
+# Processed light-sheet data of zebrafish brain activity
 
 ## FunctionalMaps (Figure 1c)
-Functional maps of zebrafish brains: 
+Functional maps of zebrafish brains during optomotor response behavior: 
 
-`/nuc`, nuclear-expressing GCaMP6f fish (manuscript Fig.1c)
+`/nuc`, nuclear-expressing GCaMP6f fish (paper Fig.1c, SI Video 1)
 
-`/cyto`, cytosol-expressing GCaMP6f fish (manuscript SI Video 2)
+`/cyto`, cytosol-expressing GCaMP6f fish (paper SI Video 2)
 
 Folders contain the following files:
   * Functional maps in RGB representation: `CompositeRGB-gamma0.5-w_range(0-1)-16bit-scaled.tif.zip`. The regression-computed weights `w_i (i=1,2,3)` (swimming, forward stimulus, backward stimulus) were linearly scaled into 16-bit image intensities (0,1) -> (0, 65535) and combined in a 3-channel 16-bit RGB TIFF stack (size: 251 MB).
@@ -19,3 +19,12 @@ Folders contain the following files:
 
 ## File downloading
 Files are stored using [Git LFS](https://git-lfs.github.com/) system because of size. The simplest way to download them is to click on each file and proceed through `Download` button, or `View raw` link ([example](https://github.com/optofish-paper/FigData/blob/master/Fig2D/nuc/MIP_CompositeRGB-w_max0p46.tif)). For automatic download of all files in the repository, install [Git LFS](https://git-lfs.github.com/) and clone the repo.
+
+## Screenshots (maximum intensity projections)
+![nuclear-expressing GCaMP6f fish (paper Fig.1c, SI Video 1)](/functionalMaps/nuc/MIP_CompositeRGB-w_max0p46-scale0.5.tif)
+
+![cytosol-expressing GCaMP6f fish (paper SI Video 2)](/functionalMaps/cyto/MIP-CompositeRGB-gamma0.5-w_max0.46-scale0.5.tif)
+
+![]()
+
+![]()
