@@ -11,14 +11,14 @@ Functional maps of zebrafish brains during optomotor response behavior, prior to
 Fish expressing GCaMP6f in neuronal **nuclei** (paper, Fig.1c, SI Video 1).
 Folder `FunctionalMaps/nuc/` contains the following files:
   * [Functional map in RGB color code](FunctionalMaps/nuc/CompositeRGB-gamma0.5-w_range(0-1)-16bit-scaled.tif.zip). The regression-computed weights `w_i (i=1,2,3)` (swimming, forward stimulus, backward stimulus) were linearly scaled into 16-bit image intensities (0,1) -> (0, 65535) and combined into a 3-channel RGB TIFF stack (red, green, blue channel, respectively) (file size: 251 MB).
-  * [Maximum intensity projection stack](FunctionalMaps/nuc/MIP_CompositeRGB-w_max0p46.tif) for quick overview of the functional activity (6 MB).
+  * [Maximum intensity projection image](FunctionalMaps/nuc/MIP_CompositeRGB-w_max0p46.tif) for quick overview of the functional activity (6 MB).
   * [Anatomy stack](FunctionalMaps/nuc/Anatomy-16bit-scaled.tif.zip), an average of 10 imaging stacks from the experiment (raw fluorescence, no post-processing), a 16-bit grayscale TIFF file (47 MB).
 
 
 Fish expressing GCaMP6f in neuronal **cytosol** (paper, Fig.2a, SI Video 2).
 Folder `FunctionalMaps/cyto/` contains the following files:
   * [Functional map in RGB color code](FunctionalMaps/cyto/CompositeRGB-gamma0.5-w_range(0-1)-16bit-scaled.tif.zip).
-  * [Maximum intensity projection stack](FunctionalMaps/cyto/MIP-CompositeRGB-gamma0.5-w_max0.46.tif)
+  * [Maximum intensity projection image](FunctionalMaps/cyto/MIP-CompositeRGB-gamma0.5-w_max0.46.tif)
   * [Anatomy stack](FunctionalMaps/cyto/Anatomy-16bit-scaled.tif.zip)
  
 ## Ablation effects on brain activity 
