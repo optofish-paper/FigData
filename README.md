@@ -34,10 +34,10 @@ Effect of brain region ablation on the relative fluorescence signal change `dF/F
 
 ## Screenshots 
 ### Maximum intensity projection of nuclear-expressing GCaMP6f fish:
-![nuclear-expressing GCaMP6f fish (paper Fig.1c, SI Video 1)](/functionalMaps/nuc/MIP_CompositeRGB-w_max0p46-scale0.5.png "nuclear-expressing GCaMP6f")
+![nuclear-expressing GCaMP6f fish (paper Fig.1c, SI Video 1)](/FunctionalMaps/nuc/MIP_CompositeRGB-w_max0p46-scale0.5.png "nuclear-expressing GCaMP6f")
 
 ### Maximum intensity projection of cytosol-expressing GCaMP6f fish:
-![cytosol-expressing GCaMP6f fish (paper SI Video 2)](/functionalMaps/cyto/MIP-CompositeRGB-gamma0.5-w_max0.46-scale0.5.png "cytosol-expressing GCaMP6f")
+![cytosol-expressing GCaMP6f fish (paper SI Video 2)](/FunctionalMaps/cyto/MIP-CompositeRGB-gamma0.5-w_max0.46-scale0.5.png "cytosol-expressing GCaMP6f")
 
 ### Maximum intensity projections of ablation effects:
 ![Ablation Effects in dF/F (Figure 2)](/ablationEffects_dFF/combined-dFFeffect-allAreas.png "ablation effects")
