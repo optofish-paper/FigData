@@ -1,7 +1,7 @@
 # Zebrafish brain activity
 This repository provides full-resolution TIFF files of zebrafish brain activity maps from the paper:
 
-*Brain-wide circuit interrogation at the cellular level guided by online analysis of neuronal function.* [Vladimirov et al, Nat. Methods, 2018]().
+*Brain-wide circuit interrogation at the cellular level guided by online analysis of neuronal function.* [Vladimirov et al, Nat. Methods, 2018](http://dx.doi.org/10.1038/s41592-018-0221-x).
 
 The images were acquired using a custom light-sheet microscope (Zebrascope) and post-processed as described in the paper.
 
@@ -48,4 +48,4 @@ Files are versioned using [Git LFS](https://git-lfs.github.com/) system because 
 ## Citation
 If you use the data, please cite the original paper:
 
-*Brain-wide circuit interrogation at the cellular level guided by online analysis of neuronal function.* [Vladimirov et al, Nat. Methods, 2018]().
+*Brain-wide circuit interrogation at the cellular level guided by online analysis of neuronal function.* [Vladimirov et al, Nat. Methods, 2018](http://dx.doi.org/10.1038/s41592-018-0221-x).
